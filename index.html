@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="./Assests/style/style.css">
+    <link rel="stylesheet" href="./Assests/style/liFunctions.css">
+    <link rel="stylesheet" href="./Assests/style/modal.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h4><button id="change-project"><span id="project-name">Project name</span></button></h4>
+            <form>
+                <input type="text" placeholder="New Task..." id="todo-input">
+                <button id="add-btn">Add</button>
+            </form>
+            <select name="todos" class="select-filter">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+                
+            </select>
+
+        </nav> 
+    </header>
+
+    <main>
+        <div class="container">
+
+            <ul class="todo-list"> </ul>
+
+        </div>
+    </main>
+
+    <!-- Modal window -->
+
+    <div class="modal-window">
+        <div class="mod-container">
+        
+        <h2>Projekto pavadinimas</h2>
+        <button id="close"><i class="far fa-times-circle"></i></button>
+        </div>
+        <input type="text" placeholder="Projekto pavadinimas" id="modal-input"/>
+        <button id="modal-btn" onclick="project()">Prideti</button>
+
+        <select id="chose-project" class="select-filter" onchange="refresh()" ></select>
+    </div>
+    
+
+    <div class="exp-bar"><div class="bar"></div></div>
+  
+    <script src="./Assests/js/generateHTML.js"></script>
+    <script src="./Assests/js/components.js"></script>   
+    <script src="./Assests/js/saveTask.js"></script> 
+    <script src="./Assests/js/newProject.js"></script>
+
+
+    <!-- <script src="dataset.js"></script> -->
+</body>
+</html>

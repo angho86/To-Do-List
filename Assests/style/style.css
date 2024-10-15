@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+ 
+}
+
+body {
+    background-color: #001233;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+header {
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+    #project-name{
+        font-size: 30px;
+        Color: white;
+    }
+
+    #change-project {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form input,
+    form button {
+        border: none;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: none;
+        background: white;
+    }
+
+    form input {
+        width: 20rem;
+        border-radius: 10px 0 0 10px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    form button {
+        color: black;
+        background: #f7fffe;
+        cursor: pointer;
+        border-radius: 0 10px 10px 0;
+        padding: 0.5rem 20px;
+        transition: all 0.3s ease;
+      }
+    form button:hover {
+        background: #33415C;
+        color: white;
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background-image: none;
+    }
+
+    .select-filter {
+        margin: 1rem;
+        padding: 0.5rem;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid var(--select-border);
+        border-radius: 10px;
+        background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+        
+      }
+
+    select {
+        color: black;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        width: 8rem;
+      
+        
+      }
+
+    .select-filter::after {
+        content: "\25BC";
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        background: #ff6f47;
+        cursor: pointer;
+        pointer-events: none;
+      }
+
+    .select-filter:hover::after {
+        transform: scale(1.5);
+        
+      }
+
+.container {
+    margin-top: 20px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+main {
+    position: relative;
+}
+
+.exp-bar {
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+}
+
+.bar {
+    width: 0;
+    height: 10px;
+    background-color: green;
+    transition: width 0.3s ease;
+}
+
+.complete-prj {
+    background-color: #16b673;
+}
+
+
